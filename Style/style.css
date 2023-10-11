@@ -1,0 +1,51 @@
+/* ---- BODY ---- */
+html, body {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    font-family: Arial;
+}
+/* ---- FIN BODY ---- */
+
+/* ---- HEADER ---- */
+header {
+    background-color: #f8f2e8;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+}
+
+header h1 {
+    text-align: center;
+    color: black;
+}
+
+/* ---- FIN HEADER ---- */
+/* ----  MENU ---- */
+nav {
+    display: flex;
+    justify-content: center; 
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+}
+/* ---- FIN MENU ---- */
