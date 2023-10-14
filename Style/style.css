@@ -9,6 +9,7 @@ body {
     padding: 0;
     top: 0;
     font-family: Arial;
+
 }
 /* ---- FIN BODY ---- */
 
@@ -35,7 +36,8 @@ header h1 {
 /* ----  MENU ---- */
 nav {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+
 }
 
 nav a {
@@ -49,3 +51,58 @@ nav a:hover {
     background-color: #e0e0e0;
 }
 /* ---- FIN MENU ---- */
+
+/* ----  SECTION ---- */
+
+/* Style pour centrer le texte et le positionner */
+.image-contenaire1 {
+    position: relative; /* Position relative pour que le texte soit positionné par rapport à ce conteneur */
+    text-align: center; /* Alignement du texte au centre */
+
+}
+
+.texte-superpose {
+    position: absolute; /* Position absolue pour superposer le texte sur l'image */
+    top: 50%; /* Positionne le texte au milieu en hauteur */
+    left: 25%; /* Positionne le texte au milieu en largeur */
+    transform: translate(-50%, -50%); /* Centre le texte correctement */
+    color: white; /* Couleur du texte */
+    background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
+    padding: 50px; /* Rembourrage du texte */
+}
+
+
+
+.texte1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #bc8831;
+}
+
+.texte2 {
+    font-size: 50px;
+    color: #927950
+}
+
+.image-menu {
+    width: 100%; /*Largeur max */
+    height: auto;
+    
+}
+
+.image-dame {
+    width: 15%; /* La largeur de l'image est 100% */
+    height: auto;
+}
+
+
+/* ---- FIN  SECTION ---- */
+/*---- Footer ---- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f2e8;
+    padding: 10px;
+}
+
+/* ---- Fin Footer ---- */
