@@ -91,9 +91,31 @@ nav a:hover {
 }
 
 .image-dame {
-    width: 15%; /* La largeur de l'image est 100% */
+    width: 80%; /* La largeur de l'image est 100% */
     height: auto;
 }
+
+.dame {
+    display: flex;
+}
+
+article {
+    flex: 1 1 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-left: 250px;
+   
+}
+
+aside {
+    flex: 1 1 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 10px; /* Vous pouvez ajuster le padding selon vos besoins */
+    margin-right: 250px;
+}
+
 
 
 /* ---- FIN  SECTION ---- */
