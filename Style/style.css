@@ -33,30 +33,13 @@ header h1 {
 }
 
 /* ---- FIN HEADER ---- */
-/* ----  MENU ---- */
-nav {
-    display: flex;
-    justify-content: center;
 
-}
-
-nav a {
-    text-decoration: none;
-    padding: 10px;
-    margin: 5px;
-    color: black;
-}
-
-nav a:hover {
-    background-color: #e0e0e0;
-}
-/* ---- FIN MENU ---- */
 
 /* ----  SECTION ---- */
 
 /* Style pour centrer le texte et le positionner */
 .image-contenaire1 {
-    position: relative; /* Position relative pour que le texte soit positionné par rapport à ce conteneur */
+    position: relative; /* Position relative pour que le texte soit positionnï¿½ par rapport ï¿½ ce conteneur */
     text-align: center; /* Alignement du texte au centre */
 
 }
@@ -85,13 +68,13 @@ nav a:hover {
 }
 
 .image-menu {
-    width: 100%; /*Largeur max */
+    width: 100%; 
     height: auto;
     
 }
 
 .image-dame {
-    width: 80%; /* La largeur de l'image est 100% */
+    width: 80%; 
     height: auto;
 }
 
@@ -112,19 +95,10 @@ aside {
     flex: 1 1 50%;
     max-width: 50%;
     box-sizing: border-box;
-    padding: 10px; /* Vous pouvez ajuster le padding selon vos besoins */
+    padding: 10px; 
     margin-right: 250px;
 }
 
 
 
 /* ---- FIN  SECTION ---- */
-/*---- Footer ---- */
-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f8f2e8;
-    padding: 10px;
-}
-
-/* ---- Fin Footer ---- */

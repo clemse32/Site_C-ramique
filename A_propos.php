@@ -15,14 +15,10 @@
         <h1>Annie B. Céramique</h1>
     </header>
 
-    <nav>
-        
-            <a href="index.html"> Acceuil</a>
-            <a href="A_propos.html"> A propos</a>
-            <a href="Mes_bouilles.HTML"> Mes "Bouilles"</a>
-            <a href="Contact.HTML"> Contact</a>
-      
-    </nav>
+    <?php
+            include "Asset/nav.HTML";
+        ?>
+    </footer>
 
     <section>
         <h2>Qui modèle l'argile ?</h2>
@@ -30,9 +26,15 @@
      
     </section>
 
+    
+
+
     <footer>
-        <p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
+    <?php
+            include "Asset/Footer.HTML";
+        ?>
     </footer>
+
 
 </body>
 

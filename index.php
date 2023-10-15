@@ -14,12 +14,10 @@
         <h1>Annie B. Céramique</h1>
     </header>
 
-    <nav>
-        <a href="index.html"> Accueil</a>
-        <a href="A_propos.html"> A propos</a>
-        <a href="Mes_bouilles.HTML"> Mes "Bouilles"</a>
-        <a href="Contact.HTML"> Contact</a>
-    </nav>
+    <?php
+            include "Asset/nav.HTML";
+        ?>
+    </footer>
 
     <section>
         <div class="image-container">
@@ -29,7 +27,7 @@
                 <span class="texte2">Sculptures & personnages en grès</span>
             </p>
         </div>
-        </section>
+    </section>
     <section class="dame">
         <article> <img src="Image\096_Annie B Céramique © Franck Tourneret Photographe_Web.jpg" class=" image-dame"></article>
         <aside>
@@ -47,23 +45,15 @@
                 Un de mes mentors m'a qualifiée de "coloriste". J'allie l'humour et les couleurs dans mon imaginaire...
             </p>
         </aside>
-        
     </section>
 
     <footer>
-        <p>
-            Me contacter <br /><br />
-            annieb.ceramique@gmail.com <br />
-            +33 603033453
-        </p>
-        <p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
-        <p>
-            Annie B. Céramique <br /><br />
-            27, Route de Séverac<br /><br />
-            12850 ONET-LE-CHATEAU - France
-        </p>
+    <?php
+            include "Asset/Footer.HTML";
+        ?>
     </footer>
 
 </body>
 
 </html>
+
