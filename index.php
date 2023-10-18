@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css" />
-    <title></title>
+    <title>Annie B. Céramique</title>
 </head>
 
 <body>
@@ -15,7 +14,7 @@
     </header>
 
     <?php
-            include "Asset/nav.HTML";
+            include "./Asset/nav.HTML";
         ?>
     </footer>
 
@@ -49,7 +48,7 @@
 
     <footer>
     <?php
-            include "Asset/Footer.HTML";
+            include "./Asset/Footer.HTML";
         ?>
     </footer>
 

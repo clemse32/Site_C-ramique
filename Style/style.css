@@ -32,6 +32,23 @@ header h1 {
     color: black;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+}
+
 /* ---- FIN HEADER ---- */
 
 
@@ -46,7 +63,7 @@ header h1 {
 
 .texte-superpose {
     position: absolute; /* Position absolue pour superposer le texte sur l'image */
-    top: 50%; /* Positionne le texte au milieu en hauteur */
+    top: 70%; /* Positionne le texte au milieu en hauteur */
     left: 25%; /* Positionne le texte au milieu en largeur */
     transform: translate(-50%, -50%); /* Centre le texte correctement */
     color: white; /* Couleur du texte */
@@ -54,7 +71,30 @@ header h1 {
     padding: 50px; /* Rembourrage du texte */
 }
 
+.image-contenaire1 {
+    position: relative; /* Position relative pour que le texte soit positionn� par rapport � ce conteneur */
+    text-align: center; /* Alignement du texte au centre */
 
+}
+
+.texte-superpose1 {
+    position: absolute; /* Position absolue pour superposer le texte sur l'image */
+    top: 30%; /* Positionne le texte au milieu en hauteur */
+    left: 50%; /* Positionne le texte au milieu en largeur */
+    transform: translate(-50%, -50%); /* Centre le texte correctement */
+    color: white; /* Couleur du texte */
+    background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
+    padding: 50px; /* Rembourrage du texte */
+}
+.texte-superpose2 {
+    position: absolute; /* Position absolue pour superposer le texte sur l'image */
+    top: 50%; /* Positionne le texte au milieu en hauteur */
+    left: 30%; /* Positionne le texte au milieu en largeur */
+    transform: translate(-50%, -50%); /* Centre le texte correctement */
+    color: white; /* Couleur du texte */
+    background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
+    padding: 50px; /* Rembourrage du texte */
+}
 
 .texte1 {
     font-size: 30px;
@@ -65,6 +105,23 @@ header h1 {
 .texte2 {
     font-size: 50px;
     color: #927950
+}
+.texte3 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.texte4 {
+    font-size: 50px;
+    color: #ffffff
+}
+
+.textecontact {
+    position: relative;
+    text-align: left;
+    max-width: 600px; 
+ 
 }
 
 .image-menu {
@@ -99,6 +156,33 @@ aside {
     margin-right: 250px;
 }
 
-
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
 
 /* ---- FIN  SECTION ---- */
+
+/* ----  FOOTER ---- */
+footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #927950;
+    }
+
+    footer p {
+    margin-left: 200px; 
+    margin-right: 100px; 
+}
+/* ---- FIN  FOOTER ---- */
