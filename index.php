@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css" />
     <title>Annie B. Céramique</title>
+    <?php
+    include "./Asset/Header.HTML";
+    ?>
 </head>
 
 <body>
 
-    <header>
-        <h1>Annie B. Céramique</h1>
-    </header>
 
     <?php
             include "./Asset/nav.HTML";
@@ -20,7 +20,7 @@
 
     <section>
         <div class="image-container">
-            <img src="Image/061_Annie B Céramique © Franck Tourneret Photographe_Web.jpg" alt="Description de l'image" class="image-menu">
+            <img src="Image/061.jpg"  class="image-menu">
             <p class="texte-superpose">
                 <span class="texte1">Céramique contemporaine</span><br /><br />
                 <span class="texte2">Sculptures & personnages en grès</span>

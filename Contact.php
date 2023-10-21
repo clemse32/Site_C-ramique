@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" 
     integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
     <title>Annie B. Céramique</title>
-  
+  <?php
+    include "./Asset/Header.HTML";
+    ?>
 </head>
 <style>
     #map {
@@ -16,14 +18,24 @@
             margin:25px 300px 200px;
         }
     
+        .Connexion {
+    background-color: #007bff; /* Couleur de fond du bouton, à personnaliser */
+    color: #fff; /* Couleur du texte du bouton, à personnaliser */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+        top: 20px; 
+        right: 20px; 
+}
 </style>
 
 
 <body>
 
-    <header>
-        <h1>Annie B. Céramique</h1>
-    </header>
+
+
 
     <?php
             include "Asset/nav.HTML";

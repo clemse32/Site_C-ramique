@@ -11,9 +11,10 @@
 
 <body>
 
-    <header>
-        <h1>Annie B. Céramique</h1>
-    </header>
+<?php
+    include "./Asset/Header.HTML";
+    ?>
+
 
     <?php
             include "Asset/nav.HTML";

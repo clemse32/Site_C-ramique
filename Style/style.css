@@ -49,6 +49,19 @@ nav a:hover {
     background-color: #e0e0e0;
 }
 
+
+.Connexion {
+    background-color: #007bff; /* Couleur de fond du bouton, à personnaliser */
+    color: #fff; /* Couleur du texte du bouton, à personnaliser */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+        top: 20px; 
+        right: 20px; 
+        }
+
 /* ---- FIN HEADER ---- */
 
 
@@ -159,16 +172,18 @@ aside {
 .carousel-container {
     display: flex;
     overflow: hidden;
-  }
-  
-  .carousel-slide {
-    min-width: 100%;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-  }
+    width: 25%; /* Ajustez la largeur du conteneur à votre convenance */
+    margin: 0 auto;
+}
+
+.carousel-slide {
+    flex: 0 0 100%; /* 100% de la largeur du conteneur, assurez-vous que chaque image occupe une seule diapositive */
+}
+
+.carousel-slide img {
+    width: 100%; /* Ajustez la largeur de l'image à 100% de la diapositive */
+    height: auto; /* Hauteur automatique pour maintenir les proportions de l'image */
+}
   
 
 /* ---- FIN  SECTION ---- */
