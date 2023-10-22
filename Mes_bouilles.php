@@ -32,18 +32,6 @@
     object-fit: contain; /* Redimensionnez l'image pour qu'elle s'adapte tout en maintenant son aspect */
 }
 
-
-.Connexion {
-    background-color: #007bff; /* Couleur de fond du bouton, à personnaliser */
-    color: #fff; /* Couleur du texte du bouton, à personnaliser */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    position: absolute;
-        top: 20px; 
-        right: 20px; 
-        }
         
 .MesBouilles {
         text-align: center; /* Centrer le texte horizontalement */

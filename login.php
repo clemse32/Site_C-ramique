@@ -8,11 +8,11 @@ try {
     $password = $_POST['password'];
 
     // Recherche de l'utilisateur en fonction du nom d'utilisateur
-    $query = $bdd->prepare("SELECT * FROM user WHERE login = :login");
-    $query->execute(array('login' => $login));
-    $user = $query->fetch();
+    $query = $bdd->prepare("SELECT * FROM user WHERE login = :login");//va chercher le user dans la base de donnée
+    $query->execute(array('login' => $login)); //Va chercher le mot de passe 
+    $user = $query->fetch();//execute la requète 
 
-    if ($user && password_verify($password, $user['password'])) {
+    if ($user && ($password == $user['password'])) { //Si le user à son mot de passe égale à celui du user
         // Authentification réussie
         // Rediriger vers la page d'accueil (index.php)
         header("Location: index.php");

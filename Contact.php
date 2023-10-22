@@ -18,17 +18,6 @@
             margin:25px 300px 200px;
         }
     
-        .Connexion {
-    background-color: #007bff; /* Couleur de fond du bouton, à personnaliser */
-    color: #fff; /* Couleur du texte du bouton, à personnaliser */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    position: absolute;
-        top: 20px; 
-        right: 20px; 
-}
 </style>
 
 
