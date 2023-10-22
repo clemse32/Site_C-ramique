@@ -34,13 +34,13 @@
 
         
 .MesBouilles {
-        text-align: center; /* Centrer le texte horizontalement */
-        margin-top: 20px; /* Espacement du haut pour centrer verticalement */
+        text-align: center; 
+        margin-top: 20px; 
     }
 
 .prev-button, .next-button {
-        display: block; /* Assurez-vous qu'ils occupent toute la largeur */
-        margin: 0 auto; /* Centrez les boutons horizontalement */
+        display: block; 
+        margin: 0 auto; 
 }
         
 

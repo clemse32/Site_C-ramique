@@ -29,7 +29,7 @@
         </div>
     </section>
     <section class="dame">
-        <article> <img src="Image\096_Annie B Céramique © Franck Tourneret Photographe_Web.jpg" class=" image-dame"></article>
+        <article> <img src="Image\096.jpg" class=" image-dame"></article>
         <aside>
             <h2>Qui modèle l'argile ?</h2>
 

@@ -98,6 +98,7 @@ nav a:hover {
     color: white; /* Couleur du texte */
     background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
     padding: 50px; /* Rembourrage du texte */
+    
 }
 .texte-superpose2 {
     position: absolute; /* Position absolue pour superposer le texte sur l'image */
@@ -107,6 +108,15 @@ nav a:hover {
     color: white; /* Couleur du texte */
     background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
     padding: 50px; /* Rembourrage du texte */
+}
+.texte-superpose3 {
+    position: absolute;
+    top: calc(50% + 50px); /* Positionne le texte-superpose3 en dessous de texte-superpose2 avec un espace de 50px */
+    left: 60%; /* Positionne le texte-superpose3 au milieu en largeur */
+    transform: translate(-50%, -50%); /* Centre le texte-superpose3 correctement */
+    color: white; /* Couleur du texte */
+    background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
+    font-size: 24px;
 }
 
 .texte1 {
@@ -125,17 +135,19 @@ nav a:hover {
     color: #ffffff;
 }
 
+
 .texte4 {
     font-size: 50px;
-    color: #ffffff
+    color: #ffffff;
+    position: absolute;
+    top: calc(50% + 20px); /* Ajustez la valeur (20px) selon votre préférence pour l'espace entre les deux éléments */
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.textecontact {
-    position: relative;
-    text-align: left;
-    max-width: 600px; 
- 
-}
+
+
+
 
 .image-menu {
     width: 100%; 
@@ -185,6 +197,15 @@ aside {
     height: auto; /* Hauteur automatique pour maintenir les proportions de l'image */
 }
   
+.image_propos {
+    width: 10%; 
+    height: auto;
+}
+
+.MesBouilles {
+    text-align: center; 
+    margin-top: 20px; 
+}
 
 /* ---- FIN  SECTION ---- */
 
