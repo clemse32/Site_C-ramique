@@ -13,8 +13,9 @@
       background-size: cover; 
       background-position: center; 
       background-repeat: no-repeat; 
-      text-align: center; /* Alignement du texte au centre */
-      padding: 50px 0; /* Marge pour le centrage vertical */
+      text-align: center; 
+      padding: 50px 0; 
+      
     }
 
     .texte5 {
@@ -23,15 +24,27 @@
         color: #ffffff;
     }
 
-    .image-act {
-        width: 60%; 
-        height: auto;
-    }
+    
+        .image-act {
+    width: auto; 
+    height: 80%;
+}
 
     .texte-act {
         color: #ffffff; 
         margin-left: 20px; 
     }
+
+    .footerbloquer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f2e8;
+}
+    
     </style>
     </head>
 
@@ -61,7 +74,7 @@
             </div>
         </div>
 
-        <footer>
+        <footer class ="footerbloquer">
             <?php
             include "Asset/Footer.HTML";
             ?>

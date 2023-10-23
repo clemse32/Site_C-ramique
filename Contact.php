@@ -43,9 +43,9 @@
         <div class ="texte-superpose3">
             <span class="texte5">
                 Contactez-moi pour la réalisation de projets sur mesure, pour discuter des techniques et échanger des modèles.
-                Vous pouvez me joindre par email ou sur les réseaux sociaux.<br>
-                Facebook <br>
-                Instagram <br>
+                Vous pouvez me joindre par email ou sur les réseaux sociaux.<br> <br>
+                <a href="https://www.facebook.com/" target="_blank" > Facebook</a> <br>
+                <a href="https://www.instagram.com/annieb.ceramique/" target="_blank" > Instagram</a> <br><br>
                 Adresse e-mail : annieb.ceramique@gmail.com <br>
                 Numéro de téléphone : +33603033453
             </span>
@@ -95,6 +95,7 @@
 
         // Nous ajoutons un marqueur
         var marker = L.marker([lat, lon]).addTo(macarte);
+        marker.bindPopup("Je suis ici").openPopup();
     }
 
     window.onload = function () {

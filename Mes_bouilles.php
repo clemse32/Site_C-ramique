@@ -42,7 +42,17 @@
         display: block; 
         margin: 0 auto; 
 }
-        
+
+.footerbloquer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f2e8;
+}
+
 
 
 </style>
@@ -83,7 +93,7 @@
 
    
 
-    <footer>
+    <footer class ="footerbloquer">
         <?php
         include "Asset/Footer.HTML";
         ?>

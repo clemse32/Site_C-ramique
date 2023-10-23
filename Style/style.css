@@ -210,15 +210,25 @@ aside {
 /* ---- FIN  SECTION ---- */
 
 /* ----  FOOTER ---- */
+
+
+
+
 footer {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #927950;
-    }
+    background-color: #f8f2e8;
+    height: height_of_footer; /* Remplacez height_of_footer par la hauteur réelle de votre footer en pixels */
+}
 
-    footer p {
+footer p {
+    
     margin-left: 200px; 
     margin-right: 100px; 
 }
+
+
+
+
 /* ---- FIN  FOOTER ---- */

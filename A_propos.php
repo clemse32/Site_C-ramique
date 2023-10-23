@@ -10,14 +10,24 @@
 </head>
 <style>
 
-.image_propos {
-    width: 60%; 
-    height: auto;
-}
 
 .image-dame {
-    width: 80%; 
+    width: 100%; 
     height: auto;
+}
+.Texte_propos{
+    position: relative; 
+  top: 100px;
+}
+
+.footerbloquer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f2e8;
 }
 
 
@@ -37,7 +47,7 @@
 
     <section class="dame">
         <article> <img src="Image\094.jpg" class=" image-dame"></article>
-        <aside>
+        <aside class="Texte_propos">
             <h2>Qui modèle l'argile ?</h2>
 
             <p>
@@ -60,7 +70,7 @@
     
 
 
-    <footer>
+    <footer class ="footerbloquer">
     <?php
             include "Asset/Footer.HTML";
         ?>
