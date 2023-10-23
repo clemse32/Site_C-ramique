@@ -22,14 +22,14 @@
 }
 
 .carousel-slide {
-    flex: 0 0 100%; /* Chaque diapositive occupe 100% de la largeur du conteneur */
-    position: relative; /* Ajoutez cette ligne */
+    flex: 0 0 100%; 
+    position: relative; 
 }
 
 .carousel-slide img {
-    max-width: 100%; /* Limitez la largeur de l'image à 100% de la largeur du conteneur */
-    max-height: 100%; /* Limitez la hauteur de l'image à 100% de la hauteur du conteneur */
-    object-fit: contain; /* Redimensionnez l'image pour qu'elle s'adapte tout en maintenant son aspect */
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: contain;
 }
 
         
@@ -71,7 +71,7 @@
 
     <section>
     <?php
-    $directory = 'Image/'; // Répertoire où sont stockées les images
+    $directory = 'Image/Carroussel/'; // Répertoire où sont stockées les images
     $images = glob($directory . '*.{jpg,jpeg,png,gif}', GLOB_BRACE); // Liste les fichiers d'images
 
     if (count($images) > 0) {
