@@ -14,10 +14,11 @@
 </head>
 <style>
     #map {
-            height: 400px;
-            margin:25px 300px 200px;
-        }
-        form {
+    height: 400px;
+    margin: 25px 300px 50px;
+}
+
+    form {
     text-align: center;
     max-width: 400px;
     margin: 0 auto;
@@ -76,7 +77,17 @@
                 Numéro de téléphone : +33603033453
             </p>
         </div>
-        <form action="" method="POST">
+
+    </div>
+ 
+     </section>
+
+    <section>
+    <div 
+        id="map">
+    </div>
+
+ <form action="" method="POST">
     <div class="form-group">
         <label for="nom">Nom :</label>
         <input type="text" name="nom">
@@ -93,7 +104,7 @@
     </div>
 
     <div class="form-group">
-        <label for="message">Note :</label>
+        <label for="message">Message :</label>
         <textarea name="message" rows="10" cols="40"></textarea>
     </div>
 
@@ -101,20 +112,8 @@
         <input type="submit" name="submit" value="Envoyer">
     </div>
     </form>
-
-
-     </div>
-     </section>
-
-
-
-   <section>
-    <div 
-        id="map">
-    </div>
-
    </section>
-    
+
     <footer>
     <?php
             include "Asset/Footer.HTML";
