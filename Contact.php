@@ -24,14 +24,14 @@
     margin: 0 auto;
   }
 
-  .form-group {
+  .labels-group {
     width: 48%; 
     margin-bottom: 10px;
     text-align: left;
   }
 
  
-  .form-group input[type="submit"] {
+  .labels-group input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -88,27 +88,27 @@
     </div>
 
  <form action="" method="POST">
-    <div class="form-group">
+    <div class="labels-group">
         <label for="nom">Nom :</label>
         <input type="text" name="nom">
     </div>
 
-    <div class="form-group">
+    <div class="labels-group">
         <label for="prenom">Prénom :</label>
         <input type="text" name="prenom">
     </div>
 
-    <div class="form-group">
+    <div class="labels-group">
         <label for="email">E-Mail :</label>
         <input type="text" name="email">
     </div>
 
-    <div class="form-group">
+    <div class="labels-group">
         <label for="message">Message :</label>
         <textarea name="message" rows="10" cols="40"></textarea>
     </div>
 
-    <div class="form-group">
+    <div class="labels-group">
         <input type="submit" name="submit" value="Envoyer">
     </div>
     </form>
