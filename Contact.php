@@ -17,7 +17,33 @@
             height: 400px;
             margin:25px 300px 200px;
         }
-    
+        form {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    width: 48%; 
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+ 
+  .form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
 </style>
 
 
@@ -41,18 +67,44 @@
             <span class="texte4">Annie B. Céramique</span>
         </div>
         <div class ="texte-superpose3">
-            <span class="texte5">
+            <p class="texte5">
                 Contactez-moi pour la réalisation de projets sur mesure, pour discuter des techniques et échanger des modèles.
                 Vous pouvez me joindre par email ou sur les réseaux sociaux.<br> <br>
-                <a href="https://www.facebook.com/" target="_blank" > Facebook</a> <br>
-                <a href="https://www.instagram.com/annieb.ceramique/" target="_blank" > Instagram</a> <br><br>
+                <a href="https://www.facebook.com/" > Facebook</a> <br>
+                <a href="https://www.instagram.com/annieb.ceramique/" > Instagram</a> <br><br>
                 Adresse e-mail : annieb.ceramique@gmail.com <br>
                 Numéro de téléphone : +33603033453
-            </span>
-            
+            </p>
         </div>
+        <form action="" method="POST">
+    <div class="form-group">
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom">
     </div>
-</section>
+
+    <div class="form-group">
+        <label for="prenom">Prénom :</label>
+        <input type="text" name="prenom">
+    </div>
+
+    <div class="form-group">
+        <label for="email">E-Mail :</label>
+        <input type="text" name="email">
+    </div>
+
+    <div class="form-group">
+        <label for="message">Note :</label>
+        <textarea name="message" rows="10" cols="40"></textarea>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" name="submit" value="Envoyer">
+    </div>
+    </form>
+
+
+     </div>
+     </section>
 
 
 
