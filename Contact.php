@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,7 +13,7 @@
     integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
     <title>Annie B. Céramique</title>
   <?php
-    include "./Asset/Header.HTML";
+    include "./Asset/Header.PHP";
     ?>
 </head>
 <style>

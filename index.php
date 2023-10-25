@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(isset($_SESSION['user'])){
+    }else{
+        echo "Pas de session en cours";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,7 +14,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <title>Annie B. Céramique</title>
     <?php
-    include "./Asset/Header.HTML";
+    include "./Asset/Header.PHP";
     ?>
 </head>
 

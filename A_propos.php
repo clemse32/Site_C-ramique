@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -35,7 +40,7 @@
 <body>
 
 <?php
-    include "./Asset/Header.HTML";
+    include "./Asset/Header.PHP";
     ?>
 
 

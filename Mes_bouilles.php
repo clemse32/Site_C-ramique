@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,7 +11,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <title>Annie B. Céramique</title>
     <?php
-    include "./Asset/Header.HTML";
+    include "./Asset/Header.PHP";
     ?>
 </head>
 
