@@ -18,8 +18,8 @@ try {
         // Authentification réussie
         // Rediriger vers la page d'accueil (index.php)
         session_start();
-        
-        header("Location: index.php");
+
+        header("Location: Administrateur.php");
     } else {
         // Authentification échouée
         echo "Nom d'utilisateur ou mot de passe incorrect.";
