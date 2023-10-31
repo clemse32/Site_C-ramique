@@ -64,7 +64,7 @@ nav a:hover {
 
 /* Style pour centrer le texte et le positionner */
 .image-contenaire {
-    position: relative; /* Position relative pour que le texte soit positionn� par rapport � ce conteneur */
+    position: relative; /* Position relative pour que le texte soit positionn par rapport ce conteneur */
     text-align: center; /* Alignement du texte au centre */
 
 }
@@ -92,7 +92,7 @@ nav a:hover {
 }
 
 .image-contenaire1 {
-    position: relative; /* Position relative pour que le texte soit positionn� par rapport � ce conteneur */
+    position: relative; /* Position relative pour que le texte soit position*/
     text-align: center; /* Alignement du texte au centre */
 
 }
@@ -109,22 +109,22 @@ nav a:hover {
 }
 
 .texte-superpose2 {
-    position: absolute; /* Position absolue pour superposer le texte sur l'image */
-    top: 50%; /* Positionne le texte au milieu en hauteur */
-    left: 30%; /* Positionne le texte au milieu en largeur */
-    transform: translate(-50%, -50%); /* Centre le texte correctement */
-    color: white; /* Couleur du texte */
-    background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
-    padding: 50px; /* Rembourrage du texte */
+    position: absolute; 
+    top: 50%; 
+    left: 30%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    background: rgba(0, 0, 0, 0); 
+    padding: 50px; 
 }
 
 .texte-superpose3 {
     position: absolute;
-    top: calc(50% + 50px); /* Positionne le texte-superpose3 en dessous de texte-superpose2 avec un espace de 50px */
-    left: 60%; /* Positionne le texte-superpose3 au milieu en largeur */
-    transform: translate(-50%, -50%); /* Centre le texte-superpose3 correctement */
-    color: white; /* Couleur du texte */
-    background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
+    top: calc(50% + 50px); 
+    left: 60%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    background: rgba(0, 0, 0, 0);
     font-size: 24px;
 }
 
@@ -208,7 +208,7 @@ aside {
 .carousel-container {
     display: flex;
     overflow: hidden;
-    width: 25%; /* Ajustez la largeur du conteneur à votre convenance */
+    width: 25%; /* la largeur du conteneur à votre convenance */
     margin: 0 auto;
 }
 
@@ -287,7 +287,7 @@ form {
     font-size: 1.5em;
     color: #ffffff;
     position: absolute;
-    top: calc(50% + 20px); /* Ajustez la valeur (20px) selon votre préférence pour l'espace entre les deux éléments */
+    top: calc(50% + 20px); /* la valeur pour l'espace entre les deux éléments */
     left: 50%;
     transform: translate(-50%, -50%);
 
