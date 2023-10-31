@@ -1,16 +1,11 @@
 /* ---- BODY ---- */
-html, body {
-    height: 100%;
-}
-
 body {
     width: 100%;
     margin: 0;
     padding: 0;
-    top: 0;
     font-family: Arial;
-
 }
+
 /* ---- FIN BODY ---- */
 
 /* ---- HEADER ---- */
@@ -22,9 +17,9 @@ header {
     padding: 0;
     top: 0;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 header h1 {
@@ -35,7 +30,7 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
-    
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -51,18 +46,16 @@ nav a:hover {
 
 
 .Connexion {
-    background-color: #007bff; /* Couleur de fond du bouton, à personnaliser */
-    color: #fff; /* Couleur du texte du bouton, à personnaliser */
+    background-color: #030404;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     position: absolute;
-        top: 20px; 
-        right: 20px; 
-    }
-
-    
+    top: 20px;
+    right: 20px;
+}
 
 /* ---- FIN HEADER ---- */
 
@@ -70,20 +63,32 @@ nav a:hover {
 /* ----  SECTION ---- */
 
 /* Style pour centrer le texte et le positionner */
-.image-contenaire1 {
+.image-contenaire {
     position: relative; /* Position relative pour que le texte soit positionn� par rapport � ce conteneur */
     text-align: center; /* Alignement du texte au centre */
 
 }
 
 .texte-superpose {
-    position: absolute; /* Position absolue pour superposer le texte sur l'image */
-    top: 70%; /* Positionne le texte au milieu en hauteur */
-    left: 25%; /* Positionne le texte au milieu en largeur */
-    transform: translate(-50%, -50%); /* Centre le texte correctement */
-    color: white; /* Couleur du texte */
-    background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
-    padding: 50px; /* Rembourrage du texte */
+    position: absolute;
+    top: 35%;
+    left: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    padding: 50px;
+
+    /* Todo */
+    @media screen and (max-width: 1024px) {
+        top: 30%;
+    }
+
+    @media screen and (max-width: 880px) {
+        top: 20%;
+    }
+
+    @media screen and (max-width: 725px) {
+        top: 10%;
+    }
 }
 
 .image-contenaire1 {
@@ -100,8 +105,9 @@ nav a:hover {
     color: white; /* Couleur du texte */
     background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
     padding: 50px; /* Rembourrage du texte */
-    
+
 }
+
 .texte-superpose2 {
     position: absolute; /* Position absolue pour superposer le texte sur l'image */
     top: 50%; /* Positionne le texte au milieu en hauteur */
@@ -111,6 +117,7 @@ nav a:hover {
     background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
     padding: 50px; /* Rembourrage du texte */
 }
+
 .texte-superpose3 {
     position: absolute;
     top: calc(50% + 50px); /* Positionne le texte-superpose3 en dessous de texte-superpose2 avec un espace de 50px */
@@ -121,66 +128,81 @@ nav a:hover {
     font-size: 24px;
 }
 
-.texte1 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #bc8831;
-}
-
-.texte2 {
-    font-size: 50px;
-    color: #927950
-}
-.texte3 {
-    font-size: 80px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-
-.texte4 {
-    font-size: 50px;
-    color: #ffffff;
-    position: absolute;
-    top: calc(50% + 20px); /* Ajustez la valeur (20px) selon votre préférence pour l'espace entre les deux éléments */
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-
-
-
 .image-menu {
-    width: 100%; 
-    height: auto;
-    
-}
-
-.image-dame {
-    width: 80%; 
+    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
-.dame {
+.dame-index {
     display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 2em;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
-article {
-    flex: 1 1 50%;
-    max-width: 50%;
-    box-sizing: border-box;
-    padding: 20px;
-    margin-left: 250px;
-   
+.article-index {
+    max-width: 80%;
+    margin: auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: 50%;
+    }
+}
+
+.aside-index {
+    max-width: 100%;
+
+    @media screen and (min-width: 768px) {
+        max-width: 50%;
+    }
+}
+
+article img {
+    width: fit-content;
+    max-width: 100%;
 }
 
 aside {
-    flex: 1 1 50%;
     max-width: 50%;
-    box-sizing: border-box;
-    padding: 10px; 
-    margin-right: 250px;
+    padding: 10px;
+    margin-right: auto;
+}
+
+/* Other page (all pages without index) */
+.dame-other-page {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 2em;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.article-other-page {
+    margin: auto;
+}
+
+.article-other-page {
+    max-width: 90%;
+
+    @media screen and (min-width: 425px) {
+        max-width: 70%;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 50%;
+    }
+}
+
+.aside-other-page {
+    margin: auto;
 }
 
 .carousel-container {
@@ -191,46 +213,139 @@ aside {
 }
 
 .carousel-slide {
-    flex: 0 0 100%; /* 100% de la largeur du conteneur, assurez-vous que chaque image occupe une seule diapositive */
+    flex: 0 0 100%; /* 100% de la largeur du conteneur */
 }
 
 .carousel-slide img {
-    width: 100%; /* Ajustez la largeur de l'image à 100% de la diapositive */
-    height: auto; /* Hauteur automatique pour maintenir les proportions de l'image */
+    width: 100%;
+    height: auto;
 }
-  
+
 .image_propos {
-    width: 10%; 
+    width: 10%;
     height: auto;
 }
 
 .MesBouilles {
-    text-align: center; 
-    margin-top: 20px; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+#map {
+    width: 80%;
+    height: 400px;
+    margin: 2em auto;
+}
+
+form {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.labels-group {
+    width: 48%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.fond-actualite {
+    background-image: url('../Image/005.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.texte-actualite {
+    color: white;
+}
+
+.texte1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #bc8831;
+}
+
+.texte2 {
+    font-size: 2.2em;
+    color: #927950;
+}
+
+.texte3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+
+    @media screen and (min-width: 1256px) {
+        font-size: 4em;
+    }
+}
+
+.texte4 {
+    font-size: 1.5em;
+    color: #ffffff;
+    position: absolute;
+    top: calc(50% + 20px); /* Ajustez la valeur (20px) selon votre préférence pour l'espace entre les deux éléments */
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (min-width: 1256px) {
+        font-size: 3em;
+    }
+}
+
+.texte5 {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #ffffff;
+
+    @media screen and (min-width: 1256px) {
+        font-size: 1em;
+    }
+}
+
+.texte-act {
+    color: #ffffff;
+    margin-left: 20px;
 }
 
 /* ---- FIN  SECTION ---- */
 
-/* ----  FOOTER ---- */
-
-
-
-
+/* ---- FOOTER ---- */
 footer {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     background-color: #f8f2e8;
-    height: height_of_footer; /* Remplacez height_of_footer par la hauteur réelle de votre footer en pixels */
+    padding: 20px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.footer-informations {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 10px;
+    }
+}
+
+.footer-informations h2 {
+    text-align: center;
 }
 
 footer p {
-    
-    margin-left: 200px; 
-    margin-right: 100px; 
+    margin: 0;
 }
 
+/* ---- FIN FOOTER ---- */
 
 
-
-/* ---- FIN  FOOTER ---- */

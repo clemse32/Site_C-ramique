@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,18 +8,6 @@
     <title>Annie B. Céramique - Connexion</title>
 </head>
 
-<style>
-
-.footerbloquer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8f2e8;
-
-}</style>
 
 <body>
 
@@ -39,13 +23,13 @@
         <h2>Administration</h2>
 
         <form action="login.php" method="post">
-            <label for="login">Nom d'utilisateur:</label>
+            <label for="login">Nom d'utilisateur:<br></label>
             <input type="text" id="login" name="login" required>
-
-            <label for="password">Mot de passe:</label>
+            <br>
+            <label for="password">Mot de passe:<br></label>
             <input type="password" id="password" name="password" required>
-
             <button type="submit">Se connecter</button>
+    
         </form>
 
     </section>

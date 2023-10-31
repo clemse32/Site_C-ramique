@@ -1,9 +1,8 @@
 <?php
 
-
 try {
     $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-    $bdd = new PDO('mysql:host=localhost;dbname=ceramique', 'Annie BURETTE', 'admin', $pdo_options);
+    $bdd = new PDO('mysql:host=localhost;dbname=ceramique', 'root', '', $pdo_options);
 
     // Récupére les données du formulaire
     $login = $_POST['login'];
@@ -17,8 +16,9 @@ try {
     if ($user && ($password == $user['password'])) { //Si le mot de passe est égale au mot de passe de son user
         // Authentification réussie
         // Rediriger vers la page d'accueil (index.php)
+        
         session_start();
-
+        $_SESSION["loggedin"] = true;
         header("Location: Administrateur.php");
     } else {
         // Authentification échouée
@@ -29,4 +29,5 @@ try {
 } catch (Exception $ex) {
     die("Erreur: " . $ex->getMessage());
 }
+
 ?>

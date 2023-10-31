@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -47,17 +43,6 @@
         margin: 0 auto; 
 }
 
-.footerbloquer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8f2e8;
-}
-
-
 
 </style>
 
@@ -97,12 +82,11 @@
 
    
 
-    <footer class ="footerbloquer">
+    <footer class ="footer">
         <?php
         include "Asset/Footer.HTML";
         ?>
     </footer>
-
 
     <script>
     const carouselContainer = document.querySelector('.carousel-container');

@@ -1,68 +1,25 @@
-<?php
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" 
-    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin=""/>
     <title>Annie B. Céramique</title>
-  <?php
+    <?php
     include "./Asset/Header.PHP";
     ?>
 </head>
-<style>
-    #map {
-    height: 400px;
-    margin: 25px 300px 50px;
-}
-
-    form {
-    text-align: center;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .labels-group {
-    width: 48%; 
-    margin-bottom: 10px;
-    text-align: left;
-  }
-
- 
-  .labels-group input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 5px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-</style>
-
 
 <body>
+<?php
+include "Asset/nav.HTML";
+?>
 
-
-
-
-    <?php
-            include "Asset/nav.HTML";
-        ?>
-    </footer>
-
-    <section>
+<section>
     <div class="image-container1">
         <img src="Image/038.jpg" alt="Description de l'image" class="image-menu">
         <div class="texte-superpose1">
@@ -71,58 +28,55 @@
         <div class="texte-superpose2">
             <span class="texte4">Annie B. Céramique</span>
         </div>
-        <div class ="texte-superpose3">
+    </div>
+</section>
+<section>
+    <div>
+        <div class="texte-superpose3">
             <p class="texte5">
-                Contactez-moi pour la réalisation de projets sur mesure, pour discuter des techniques et échanger des modèles.
+                Contactez-moi pour la réalisation de projets sur mesure, pour discuter des techniques et échanger des
+                modèles.
                 Vous pouvez me joindre par email ou sur les réseaux sociaux.<br> <br>
-                <a href="https://www.facebook.com/" > Facebook</a> <br>
-                <a href="https://www.instagram.com/annieb.ceramique/" > Instagram</a> <br><br>
-                Adresse e-mail : annieb.ceramique@gmail.com <br>
-                Numéro de téléphone : +33603033453
+                <a href="https://www.facebook.com/"> Facebook</a> <br>
+                <a href="https://www.instagram.com/annieb.ceramique/"> Instagram</a>
             </p>
         </div>
-
-    </div>
- 
-     </section>
-
-    <section>
-    <div 
-        id="map">
     </div>
 
- <form action="" method="POST">
-    <div class="labels-group">
-        <label for="nom">Nom :</label>
-        <input type="text" name="nom">
-    </div>
+    <div id="map"></div>
 
-    <div class="labels-group">
-        <label for="prenom">Prénom :</label>
-        <input type="text" name="prenom">
-    </div>
+    <form action="" method="POST">
+        <div class="labels-group">
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom">
+        </div>
 
-    <div class="labels-group">
-        <label for="email">E-Mail :</label>
-        <input type="text" name="email">
-    </div>
+        <div class="labels-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom">
+        </div>
 
-    <div class="labels-group">
-        <label for="message">Message :</label>
-        <textarea name="message" rows="10" cols="40"></textarea>
-    </div>
+        <div class="labels-group">
+            <label for="email">E-Mail :</label>
+            <input type="text" name="email">
+        </div>
 
-    <div class="labels-group">
-        <input type="submit" name="submit" value="Envoyer">
-    </div>
+        <div class="labels-group">
+            <label for="message">Message :</label>
+            <textarea name="message" rows="10" cols="40"></textarea>
+        </div>
+
+        <div class="labels-group">
+            <input type="submit" name="submit" value="Envoyer">
+        </div>
     </form>
-   </section>
+</section>
 
-    <footer>
+<footer>
     <?php
-            include "Asset/Footer.HTML";
-        ?>
-    </footer>
+    include "Asset/Footer.HTML";
+    ?>
+</footer>
 
 </body>
 
