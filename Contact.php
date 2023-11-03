@@ -29,9 +29,7 @@ include "Asset/nav.HTML";
             <span class="texte4">Annie B. Céramique</span>
         </div>
     </div>
-</section>
-<section>
-    <div>
+    
         <div class="texte-superpose3">
             <p class="texte5">
                 Contactez-moi pour la réalisation de projets sur mesure, pour discuter des techniques et échanger des
@@ -41,11 +39,12 @@ include "Asset/nav.HTML";
                 <a href="https://www.instagram.com/annieb.ceramique/"> Instagram</a>
             </p>
         </div>
-    </div>
+</section>
 
+<section>
     <div id="map"></div>
 
-    <form action="" method="POST">
+    <form action="php\insertionCommantaire.php" method="POST">
         <div class="labels-group">
             <label for="nom">Nom :</label>
             <input type="text" name="nom">

@@ -16,7 +16,7 @@ include "Asset/nav.HTML";
 ?>
 
 <div class="fond-actualite">
-    <h2 class="texte5">Actualité</h2>
+    <h1 class="texte5">Actualité</h1>
     <div class="dame-other-page">
         <article class="article-other-page">
             <img src="Image/Argilla.jpg" class="image-act">

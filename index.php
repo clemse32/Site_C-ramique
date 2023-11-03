@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,7 +14,6 @@
 <?php
 include "./Asset/nav.HTML";
 ?>
-
 <section>
     <div class="image-container">
         <img src="Image/061.jpg" class="image-menu">

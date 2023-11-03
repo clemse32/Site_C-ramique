@@ -47,8 +47,6 @@
 </style>
 
 <body>
-   
-    
 
     <?php
     include "./Asset/nav.HTML";
