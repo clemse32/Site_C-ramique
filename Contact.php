@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css"/>
+    <script type="text/javascript" src="../JS/Contact.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
           integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
           crossorigin=""/>
@@ -44,31 +45,33 @@ include "Asset/nav.HTML";
 <section>
     <div id="map"></div>
 
-    <form action="php\insertionCommantaire.php" method="POST">
+    <form id ="f-contact" method="POST">
         <div class="labels-group">
             <label for="nom">Nom :</label>
-            <input type="text" name="nom">
+            <input type="text" name="nom" required>
         </div>
 
         <div class="labels-group">
             <label for="prenom">Prénom :</label>
-            <input type="text" name="prenom">
+            <input type="text" name="prenom"required>
         </div>
 
         <div class="labels-group">
             <label for="email">E-Mail :</label>
-            <input type="text" name="email">
+            <input type="email" name="email"required>
         </div>
 
         <div class="labels-group">
             <label for="message">Message :</label>
-            <textarea name="message" rows="10" cols="40"></textarea>
+            <textarea name="message" rows="10" cols="40" required ></textarea>
         </div>
 
         <div class="labels-group">
-            <input type="submit" name="submit" value="Envoyer">
+            <input id="bt-message" type="submit" value="Envoyer">
         </div>
+        <div id ="mess"></div>
     </form>
+
 </section>
 
 <footer>

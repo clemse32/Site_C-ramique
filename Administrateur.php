@@ -1,4 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css" />
+    <script type="text/javascript" src="../JS/index.js"></script>
+
+    <title>Annie B. Céramique</title>
+    <?php
+    include "./Asset/Header.PHP";
+    ?>
+</head>
 <?php
+include "./Asset/nav.HTML";
+?>
+<body>
+    <h1>Compte Administration</h1>
+    <section>
+        <h2>Modification des images du Carrousel</h2>
+        <div id="imageList">Images du Carrousel</div>
+        <div id="validationStatus"></div>
+        <button id="charge_image">Charger les images</button>
+    </section>
+    <section>
+        <h2>Récupération des avis</h2>
+        <?php
 session_start();
 if (isset($_SESSION["loggedin"])) {
 } else {
@@ -36,33 +61,6 @@ mysqli_close($connect);
 
 }
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style/style.css" />
-    <script type="text/javascript" src="../JS/index.js"></script>
-
-    <title>Annie B. Céramique</title>
-    <?php
-    include "./Asset/Header.PHP";
-    ?>
-</head>
-<?php
-include "./Asset/nav.HTML";
-?>
-<body>
-    <h1>Compte Administration</h1>
-    <section>
-        <h2>Modification des images du Carrousel</h2>
-        <div id="imageList">Images du Carrousel</div>
-        <div id="validationStatus"></div>
-        <button id="charge_image">Charger les images</button>
-    </section>
-    <section>
-        <h2>Récupération des avis</h2>
-        
     </section>
 </body>
 
