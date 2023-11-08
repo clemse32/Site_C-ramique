@@ -2,6 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $connect = mysqli_connect("127.0.0.1", "root", "", "ceramique" );
+    
     if(isset($_POST['nom'],$_POST['prenom'],$_POST['email'],$_POST['message'])){
 
         $nom = mysqli_real_escape_string($connect, $_POST['nom']);

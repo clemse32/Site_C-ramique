@@ -2,16 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
     <script type="text/javascript" src="../JS/index.js"></script>
 
     <title>Annie B. Céramique</title>
     <?php
-    include "./Asset/Header.PHP";
+    include "Header.PHP";
     ?>
 </head>
 <?php
-include "./Asset/nav.HTML";
+include "nav.HTML";
 ?>
 <body>
     <h1>Compte Administration</h1>
@@ -24,7 +24,7 @@ include "./Asset/nav.HTML";
     <section>
         <h2>Récupération des avis</h2>
         <?php
-session_start();
+
 if (isset($_SESSION["loggedin"])) {
 } else {
     echo "Pas de session en cours";
@@ -47,7 +47,13 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             echo "<td>" . $row["Nom"] . "</td>";
             echo "<td>" . $row["Mail"] . "</td>";
             echo "<td>" . $row["Message"] . "</td>";
+            echo "<td>";
+            echo "<button class='delete-button' data-message-id='" . $row["ID"] . "'>Supprimer</button>";
+            echo "</form>";
+            echo "</td>";
             echo "</tr>";
+            
+           
         }
     
         echo "</table>";
@@ -61,12 +67,42 @@ mysqli_close($connect);
 
 }
 ?>
-    </section>
+</section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var deleteButtons = document.querySelectorAll(".delete-button");
+
+    deleteButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            var messageID = button.getAttribute("data-message-id");
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "supprimer_message.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    if (xhr.responseText === "success") {
+                        button.closest("tr").style.display = "none";
+                    } else {
+                        alert("Erreur lors de la suppression du message.");
+                    }
+                }
+            };
+
+            xhr.send("message_id=" + messageID);
+        });
+    });
+});
+
+  </script>
+
 </body>
 
 <footer>
 <?php
-     include "Asset/Footer.HTML";
+     include "Footer.HTML";
 ?>
 </footer>
 

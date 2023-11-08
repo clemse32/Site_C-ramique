@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
     <title>Annie B. Céramique - Connexion</title>
 </head>
 
@@ -12,11 +12,11 @@
 <body>
 
     <?php
-    include "./Asset/Header.PHP";
+    include "Header.PHP";
     ?>
 
     <?php
-    include "./Asset/nav.HTML";
+    include "nav.HTML";
     ?>
 
     <section>
@@ -36,7 +36,7 @@
     
     <footer class ="footerbloquer">
         <?php
-        include "Asset/Footer.HTML";
+        include "Footer.HTML";
         ?>
     </footer>
 

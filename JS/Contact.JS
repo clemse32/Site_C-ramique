@@ -3,18 +3,17 @@ document.getElementById('bt-message').addEventListener('click', function (e) {
 
     var formulaire = document.getElementById('f-contact');
     var donnees = new FormData(formulaire);
-    if (formulaire.checkValidity()){
+    if (formulaire.checkValidity()) {
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', '../php/insertionCommentaire.php', true); 
+        xhr.open('POST', '../Controleur/insertionCommentaire.php', true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
-             if (xhr.status === 200) {
+                if (xhr.status === 200) {
                     // Traitement de la réponse ici
                     document.getElementById('mess').innerHTML = xhr.responseText;
-                } else if(xhr.status === 202) {
+                } else if (xhr.status === 202) {
                     document.getElementById('mess').innerHTML = xhr.responseText;
-                }
-                else {
+                } else {
                     document.getElementById('mess').innerHTML = 'Erreur lors de la connexion';
                 }
             }

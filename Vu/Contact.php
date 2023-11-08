@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css"/>
-    <script type="text/javascript" src="../JS/Contact.js"></script>
+    <link rel="stylesheet" href="../style/style.css"/>
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
           integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
           crossorigin=""/>
     <title>Annie B. Céramique</title>
     <?php
-    include "./Asset/Header.PHP";
+    include "Header.PHP";
     ?>
 </head>
 
 <body>
 <?php
-include "Asset/nav.HTML";
+include "nav.HTML";
 ?>
 
 <section>
     <div class="image-container1">
-        <img src="Image/038.jpg" alt="Description de l'image" class="image-menu">
+        <img src="../Image/038.jpg" alt="Description de l'image" class="image-menu">
         <div class="texte-superpose1">
             <span class="texte3">Contacter</span><br><br>
         </div>
@@ -45,7 +45,7 @@ include "Asset/nav.HTML";
 <section>
     <div id="map"></div>
 
-    <form id ="f-contact" method="POST">
+    <form id ="f-contact" method="post">
         <div class="labels-group">
             <label for="nom">Nom :</label>
             <input type="text" name="nom" required>
@@ -53,12 +53,12 @@ include "Asset/nav.HTML";
 
         <div class="labels-group">
             <label for="prenom">Prénom :</label>
-            <input type="text" name="prenom"required>
+            <input type="text" name="prenom" required>
         </div>
 
         <div class="labels-group">
             <label for="email">E-Mail :</label>
-            <input type="email" name="email"required>
+            <input type="email" name="email" required>
         </div>
 
         <div class="labels-group">
@@ -76,7 +76,7 @@ include "Asset/nav.HTML";
 
 <footer>
     <?php
-    include "Asset/Footer.HTML";
+    include "Footer.HTML";
     ?>
 </footer>
 
@@ -114,4 +114,7 @@ include "Asset/nav.HTML";
         initMap();
     };
 </script>
+<script type="text/javascript" src="../JS/Contact.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </html>

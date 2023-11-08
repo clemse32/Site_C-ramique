@@ -1,22 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="../style/style.css"/>
     <title>Annie B. Céramique</title>
     <?php
-    include "./Asset/Header.PHP";
+    include "Header.PHP";
     ?>
 </head>
 <body>
 <?php
-include "./Asset/nav.HTML";
+include "nav.HTML";
 ?>
 <section>
     <div class="image-container">
-        <img src="Image/061.jpg" class="image-menu">
+        <img src="../Image/061.jpg" class="image-menu">
         <p class="texte-superpose">
             <span class="texte1">Céramique contemporaine</span><br/><br/>
             <span class="texte2">Sculptures & personnages en grès</span>
@@ -25,7 +24,7 @@ include "./Asset/nav.HTML";
 </section>
 <section class="dame-index">
     <article class="article-index">
-        <img src="Image\096.jpg">
+        <img src="../Image/096.jpg">
     </article>
     <aside class="aside-index">
         <h2>Qui modèle l'argile ?</h2>
@@ -46,7 +45,7 @@ include "./Asset/nav.HTML";
 
 <footer class="footer">
     <?php
-    include "./Asset/Footer.HTML";
+    include "Footer.HTML";
     ?>
 </footer>
 </body>

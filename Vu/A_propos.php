@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="../style/style.css"/>
     <title>Annie B. Céramique</title>
 </head>
 
 <body>
 <?php
-include "./Asset/Header.PHP";
+include "Header.PHP";
 ?>
 
 <?php
-include "Asset/nav.HTML";
+include "nav.HTML";
 ?>
 
 <section class="dame-other-page">
     <article class="article-other-page">
-        <img src="Image\094.jpg">
+        <img src="../Image/094.jpg">
     </article>
     <aside class="aside-other-page">
         <h2>Qui modèle l'argile ?</h2>
@@ -40,7 +40,7 @@ include "Asset/nav.HTML";
 </section>
 <footer class="footer">
     <?php
-    include "Asset/Footer.HTML";
+    include "Footer.HTML";
     ?>
 </footer>
 </body>

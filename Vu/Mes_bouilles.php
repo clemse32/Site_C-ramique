@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
     <title>Annie B. Céramique</title>
     <?php
-    include "./Asset/Header.PHP";
+    include "Header.PHP";
     ?>
 </head>
 
@@ -49,7 +49,7 @@
 <body>
 
     <?php
-    include "./Asset/nav.HTML";
+    include "nav.HTML";
     ?>
 
     <section>
@@ -58,7 +58,7 @@
 
     <section>
     <?php
-    $directory = 'Image/Carroussel/'; // Répertoire où sont stockées les images
+    $directory = '../Image/Carroussel/'; // Répertoire où sont stockées les images
     $images = glob($directory . '*.{jpg,jpeg,png,gif}', GLOB_BRACE); // Liste les fichiers d'images
 
     if (count($images) > 0) {
@@ -82,7 +82,7 @@
 
     <footer class ="footer">
         <?php
-        include "Asset/Footer.HTML";
+        include "Footer.HTML";
         ?>
     </footer>
 
