@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../style/style.css" />
-    <script type="text/javascript" src="../JS/index.js"></script>
+
 
     <title>Annie B. Céramique</title>
 </head>
@@ -15,7 +15,7 @@
     <h1>Compte Administration</h1>
 
     <section>
-    <h2>Modification des images du Carrousel</h2>
+    <h2>Ajouter/Supprimer des images du Carrousel</h2>
     <form enctype="multipart/form-data" method="post" action="upload_image.php">
         <input type="file" name="image" accept="image/*" required>
         <button type="submit">Ajouter l'image</button>
@@ -23,23 +23,22 @@
 
     <div class="carousel-images">
         <?php
-        
+    
         $carouselImagesDir = "../Image/Carroussel/";
         $carouselImages = scandir($carouselImagesDir);
         
         foreach ($carouselImages as $image) {
             if (!in_array($image, array(".", ".."))) {
                 echo '<div class="carousel-image">';
-                echo '<img src="' . $carouselImagesDir . $image . '>';
-                echo '<button class="delete_image" data-image="' . $carouselImagesDir . $image . '">Supprimer</button>';
+                echo '<img src="' . $carouselImagesDir . $image . '" alt="Image de Carrousel">';
+                echo '<button class="delete-image-button" data-image="' . $carouselImagesDir . $image . '">Supprimer</button>';
                 echo '</div>';
             }
         }
         ?>
     </div>
- 
-
 </section>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {

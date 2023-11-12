@@ -1,8 +1,20 @@
 <nav>
-    <a href="index.PHP"> Acceuil</a>
-    <a href="A_propos.PHP"> A propos</a>
-    <a href="Mes_bouilles.PHP"> Mes "Bouilles"</a>
-    <a href="Actualité.PHP"> Actualité</a>
-    <a href="Contact.PHP"> Contact</a>
-    <a href="Connexion.php"><button class="Connexion">Connexion</button></a>
+    <a href="index.php">Accueil</a>
+    <a href="A_propos.php">A propos</a>
+    <a href="Mes_bouilles.php">Mes "Bouilles"</a>
+    <a href="Actualite.php">Actualité</a>
+    <a href="Contact.php">Contact</a>
+
+    <?php
+session_start();
+
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+    
+    echo '<a href="deconnexion.php"><button class="Connexion">Déconnexion</button></a>';
+} else {
+    
+    echo '<a href="connexion.php"><button class="Connexion">Connexion</button></a>';
+}
+?>
+
 </nav>
