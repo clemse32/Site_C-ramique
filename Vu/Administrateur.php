@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../Style/style.css" />
+    <link rel="stylesheet" href="../Style/styleAdministrateur.css" />
 
 
     <title>Annie B. Céramique</title>
@@ -17,7 +17,7 @@
 
     <section>
     <h2>Ajouter/Supprimer des images du Carrousel</h2>
-    <form enctype="multipart/form-data" method="post" action="upload_image.php">
+    <form enctype="multipart/form-data" method="post" action="Upload_image.php">
         <input type="file" name="image" accept="image/*" required>
         <button type="submit">Ajouter l'image</button>
     </form>
@@ -131,7 +131,7 @@
                             if (xhr.responseText === "success") {
                                 button.closest("tr").style.display = "none";
                             } else {
-                                alert("Erreur lors de la suppression du message.");
+                                alert("Erreur suppression du message.");
                             }
                         }
                     };

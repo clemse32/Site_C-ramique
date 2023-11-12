@@ -11,40 +11,6 @@
     ?>
 </head>
 
-<style>
-
-.carousel-container {
-    display: flex;
-    overflow: hidden;
-    width: 100%; 
-    margin: 0 auto;
-    max-height: 400px; 
-}
-
-.carousel-slide {
-    flex: 0 0 100%; 
-    position: relative; 
-}
-
-.carousel-slide img {
-    max-width: 100%; 
-    max-height: 100%;
-    object-fit: contain;
-}
-
-        
-.MesBouilles {
-        text-align: center; 
-        margin-top: 20px; 
-    }
-
-.prev-button, .next-button {
-        display: block; 
-        margin: 0 auto; 
-}
-
-
-</style>
 
 <body>
 
