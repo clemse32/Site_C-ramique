@@ -75,6 +75,7 @@ nav a:hover {
     color: white;
     background: rgba(0, 0, 0, 0);
     padding: 50px;
+    
 
     /* Todo */
     @media screen and (max-width: 1024px) {
@@ -86,8 +87,13 @@ nav a:hover {
     }
 
     @media screen and (max-width: 725px) {
-        top: 10%;
+        top: 20%;
     }
+    @media screen and (max-width: 725px) {
+        top: 15%;
+    }
+
+
 }
 
 .image-contenaire1 {
@@ -104,6 +110,13 @@ nav a:hover {
     color: white; 
     background: rgba(0, 0, 0, 0); 
     padding: 50px;
+    @media screen and (max-width: 1100px) {
+        top :27.5%;
+     }
+     
+     @media screen and (max-width: 370px) {
+        top :17%;
+     }
 
 }
 
@@ -116,8 +129,17 @@ nav a:hover {
     background: rgba(0, 0, 0, 0); 
     padding: 50px;
     @media screen and (max-width: 1100px) {
-        top :30%;
+        top :40%;
      }
+     
+    @media screen and (max-width: 700px) {
+        top :35%;
+     }
+     @media screen and (max-width: 400px) {
+        top :30%;
+         
+     }
+     
 
 }
 
@@ -129,10 +151,29 @@ nav a:hover {
     color: white; 
     background: rgba(0, 0, 0, 0);
     font-size: 24px;
+
     @media screen and (max-width: 1100px) {
-       top :40%;
+        top :40%;
+     }
+
+
+    @media screen and (max-width: 800px) {
+       top :36%;
         
     }
+    @media screen and (max-width: 630px) {
+        top :37%;
+         
+     }
+    @media screen and (max-width: 580px) {
+        top :38%;
+         
+     }
+     @media screen and (max-width: 400px) {
+        top :35%;
+         
+     }
+    
 }
 
 .image-menu {
@@ -274,13 +315,20 @@ form {
     font-size: 1.8em;
     font-weight: bold;
     color: #f30909;
+    @media screen and (max-width: 650px) {
+        font-size: 1.0em;
+        
+    }
     
 }
 
 .texte2 {
     font-size: 2.2em;
     color: #d51919;
-    
+    @media screen and (max-width: 650px) {
+        font-size: 1.0em;
+        
+    }
 }
 
 .texte3 {
@@ -290,6 +338,11 @@ form {
 
     @media screen and (min-width: 1256px) {
         font-size: 3em;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 1em;
+       
+        
     }
 }
 
@@ -304,6 +357,15 @@ form {
     @media screen and (min-width: 1256px) {
         font-size: 3em;
     }
+    @media screen and (max-width: 800px) {
+        font-size: 1.2em;
+        
+        
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 0.6em;
+    
+    }
 }
 
 .texte5 {
@@ -315,6 +377,7 @@ form {
         font-size: 1.2em;
     }
     
+    
 }
 
 .texte6{
@@ -325,6 +388,16 @@ form {
     @media screen and (max-width: 1100px) {
         font-size: 0.6em;
         max-height: 80%;
+        
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 0.6em;
+        
+        
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 0.4em;
+        
         
     }
 }
