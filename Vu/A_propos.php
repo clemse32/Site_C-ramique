@@ -9,11 +9,8 @@
 
 <body>
 <?php
-include "Header.PHP";
-?>
-
-<?php
-include "nav.HTML";
+include("Header.HTML");
+include("nav.HTML");
 ?>
 
 <section class="dame-other-page">
@@ -38,10 +35,9 @@ include "nav.HTML";
         </p>
     </aside>
 </section>
-<footer class="footer">
     <?php
-    include "Footer.HTML";
+    include ("Footer.HTML");
     ?>
-</footer>
+
 </body>
 </html>

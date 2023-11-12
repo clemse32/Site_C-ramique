@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css"/>
     <title>Annie B. Céramique</title>
-    <?php
-    include "Header.PHP";
-    ?>
+    
 </head>
 <body>
 <?php
-include "nav.HTML";
+include("Header.HTML");
+include("nav.HTML");
 ?>
 <section>
     <div class="image-container">
@@ -43,11 +42,10 @@ include "nav.HTML";
     </aside>
 </section>
 
-<footer class="footer">
     <?php
-    include "Footer.HTML";
+    include("Footer.HTML");
     ?>
-</footer>
+
 </body>
 </html>
 

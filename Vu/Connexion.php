@@ -11,13 +11,10 @@
 
 <body>
 
-    <?php
-    include "Header.PHP";
-    ?>
-
-    <?php
-    include "nav.HTML";
-    ?>
+<?php
+include("Header.HTML");
+include("nav.HTML");
+?>
 
     <section>
         <h2>Administration</h2>
@@ -34,11 +31,11 @@
 
     </section>
     
-    <footer class ="footer">
+
         <?php
-        include "Footer.HTML";
+        include("Footer.HTML");
         ?>
-    </footer>
+    
 
 </body>
 

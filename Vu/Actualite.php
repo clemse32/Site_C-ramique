@@ -8,11 +8,8 @@
 </head>
 <body>
 <?php
-include "Header.PHP";
-?>
-
-<?php
-include "nav.HTML";
+include("Header.HTML");
+include("nav.HTML");
 ?>
 
 <div class="fond-actualite">
@@ -32,10 +29,9 @@ include "nav.HTML";
     </div>
 </div>
 
-<footer class="footerbloquer">
     <?php
-    include "Footer.HTML";
+    include("Footer.HTML");
     ?>
-</footer>
+
 </body>
 </html>

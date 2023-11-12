@@ -10,14 +10,13 @@
           integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
           crossorigin=""/>
     <title>Annie B. Céramique</title>
-    <?php
-    include "Header.PHP";
-    ?>
+   
 </head>
-
+   
 <body>
 <?php
-include "nav.HTML";
+include("Header.HTML");
+include("nav.HTML");
 ?>
 
 <section>
@@ -30,12 +29,11 @@ include "nav.HTML";
             <span class="texte4">Annie B. Céramique</span>
         </div>
     </div>
-    
         <div class="texte-superpose3">
-            <p class="texte5">
+            <p class="texte6">
                 Contactez-moi pour la réalisation de projets sur mesure, pour discuter des techniques et échanger des
                 modèles.
-                Vous pouvez me joindre par email ou sur les réseaux sociaux.<br> <br>
+                Vous pouvez me joindre par email ou sur les réseaux sociaux.<br>
                 <a href="https://www.facebook.com/"> Facebook</a> <br>
                 <a href="https://www.instagram.com/annieb.ceramique/"> Instagram</a>
             </p>
@@ -74,11 +72,11 @@ include "nav.HTML";
 
 </section>
 
-<footer>
+
     <?php
-    include "Footer.HTML";
+    include("Footer.HTML");
     ?>
-</footer>
+
 
 </body>
 

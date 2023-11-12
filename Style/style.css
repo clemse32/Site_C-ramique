@@ -114,7 +114,11 @@ nav a:hover {
     transform: translate(-50%, -50%); 
     color: white; 
     background: rgba(0, 0, 0, 0); 
-    padding: 50px; 
+    padding: 50px;
+    @media screen and (max-width: 1100px) {
+        top :30%;
+     }
+
 }
 
 .texte-superpose3 {
@@ -125,6 +129,10 @@ nav a:hover {
     color: white; 
     background: rgba(0, 0, 0, 0);
     font-size: 24px;
+    @media screen and (max-width: 1100px) {
+       top :40%;
+        
+    }
 }
 
 .image-menu {
@@ -259,6 +267,7 @@ form {
 
 .texte-actualite {
     color: white;
+
 }
 
 .texte1 {
@@ -280,7 +289,7 @@ form {
     color: #ffffff;
 
     @media screen and (min-width: 1256px) {
-        font-size: 4em;
+        font-size: 3em;
     }
 }
 
@@ -303,9 +312,21 @@ form {
     color: #ffffff;
 
     @media screen and (min-width: 1256px) {
-        font-size: 3em;
+        font-size: 1.2em;
     }
     
+}
+
+.texte6{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffffff;
+
+    @media screen and (max-width: 1100px) {
+        font-size: 0.6em;
+        max-height: 80%;
+        
+    }
 }
 
 .texte-act {

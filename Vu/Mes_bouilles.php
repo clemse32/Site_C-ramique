@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../style/style.css" />
     <title>Annie B. Céramique</title>
     <?php
-    include "Header.PHP";
+    include("Header.HTML");
     ?>
 </head>
 
@@ -16,9 +16,9 @@
 .carousel-container {
     display: flex;
     overflow: hidden;
-    width: 100%; /* Utilisez 100% pour que le carrousel occupe toute la largeur disponible */
+    width: 100%; 
     margin: 0 auto;
-    max-height: 400px; /* Définissez la hauteur maximale souhaitée */
+    max-height: 400px; 
 }
 
 .carousel-slide {
@@ -58,8 +58,8 @@
 
     <section>
     <?php
-    $directory = '../Image/Carroussel/'; // Répertoire où sont stockées les images
-    $images = glob($directory . '*.{jpg,jpeg,png,gif}', GLOB_BRACE); // Liste les fichiers d'images
+    $directory = '../Image/Carroussel/'; 
+    $images = glob($directory . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
 
     if (count($images) > 0) {
     echo '<div class="carousel-container">';
@@ -78,13 +78,10 @@
         <button class="next-button">Suivant</button>
     </section>
 
-   
-
-    <footer class ="footer">
         <?php
-        include "Footer.HTML";
+        include("Footer.HTML");
         ?>
-    </footer>
+
 
     <script>
     const carouselContainer = document.querySelector('.carousel-container');

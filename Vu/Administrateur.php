@@ -8,9 +8,10 @@
     <title>Annie B. Céramique</title>
 </head>
 <body>
-    <?php include "Header.PHP"; ?>
-
-    <?php include "navConnexion.HTML"; ?>
+    <?php 
+    include("Header.PHP");
+    include("navConnexion.HTML");
+    ?>
 
     <h1>Compte Administration</h1>
 
@@ -141,6 +142,8 @@
         });
     </script>
 
-    <?php include "Footer.HTML"; ?>
+    <?php 
+    include("Footer.HTML"); 
+    ?>
 </body>
 </html>
