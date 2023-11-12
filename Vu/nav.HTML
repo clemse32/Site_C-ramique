@@ -1,20 +1,8 @@
-<?php
-session_start(); // Start the session
-
-?>
-
 <nav>
     <a href="index.PHP"> Acceuil</a>
     <a href="A_propos.PHP"> A propos</a>
     <a href="Mes_bouilles.PHP"> Mes "Bouilles"</a>
     <a href="Actualité.PHP"> Actualité</a>
     <a href="Contact.PHP"> Contact</a>
-
-    <?php
-    if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]) {
-        echo '<a href="Deconnexion.php"><button class="Connexion">Deconnexion</button></a>';
-    } else {
-        echo '<a href="Connexion.php"><button class="Connexion">Connexion</button></a>';
-    }
-    ?>
+    <a href="Connexion.php"><button class="Connexion">Connexion</button></a>
 </nav>

@@ -8,7 +8,7 @@ if (isset($_POST["message_id"])) {
     if ($connect->query($sql) === TRUE) {
         echo "success";
     } else {
-        echo "Erreur lors de la suppression du message : " . $connect->error;
+        echo "Erreur de la suppression du message : " . $connect->error;
     }
 
     mysqli_close($connect);

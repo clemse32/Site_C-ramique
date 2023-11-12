@@ -14,7 +14,7 @@ try {
 
     if ($user && password_verify($password, $user['password'])) {
         // Authentification réussie
-        // Rediriger vers la page d'accueil (index.php)
+        // Rediriger vers la page d'accueil (administrateur.php)
         
         session_start();
         $_SESSION["loggedin"] = true;

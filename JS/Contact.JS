@@ -9,7 +9,6 @@ document.getElementById('bt-message').addEventListener('click', function (e) {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
-                    // Traitement de la réponse ici
                     document.getElementById('mess').innerHTML = xhr.responseText;
                 } else if (xhr.status === 202) {
                     document.getElementById('mess').innerHTML = xhr.responseText;

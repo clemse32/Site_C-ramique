@@ -16,19 +16,29 @@
 
     <section>
     <h2>Modification des images du Carrousel</h2>
-    <div id="imageList">
-        <?php
-        $carrouselDirectory = '../Image/Carroussel';
-        $images = glob($carrouselDirectory . '/*');
+    <form enctype="multipart/form-data" method="post" action="upload_image.php">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Ajouter l'image</button>
+    </form>
 
-        foreach ($images as $image) {
-            echo '<div class="image-container">';
-            echo '<img src="' . $image . '" alt="Image du carrousel">';
-            echo '<button class="delete-image-button" data-image="' . $image . '">Supprimer</button>';
-            echo '</div>';
+    <div class="carousel-images">
+        <?php
+        
+        $carouselImagesDir = "../Image/Carroussel/";
+        $carouselImages = scandir($carouselImagesDir);
+        
+        foreach ($carouselImages as $image) {
+            if (!in_array($image, array(".", ".."))) {
+                echo '<div class="carousel-image">';
+                echo '<img src="' . $carouselImagesDir . $image . '>';
+                echo '<button class="delete_image" data-image="' . $carouselImagesDir . $image . '">Supprimer</button>';
+                echo '</div>';
+            }
         }
         ?>
     </div>
+ 
+
 </section>
 
 <script>
@@ -46,7 +56,6 @@
                 xhr.onload = function() {
                     if (xhr.status === 200) {
                         if (xhr.responseText === "success") {
-                            // Supprimer l'image du DOM côté client
                             button.parentNode.remove();
                         } else {
                             alert("Erreur lors de la suppression de l'image.");
