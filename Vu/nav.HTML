@@ -4,17 +4,5 @@
     <a href="Mes_bouilles.php">Mes "Bouilles"</a>
     <a href="Actualite.php">Actualité</a>
     <a href="Contact.php">Contact</a>
-
-    <?php
-session_start();
-
-if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-    
-    echo '<a href="deconnexion.php"><button class="Connexion">Déconnexion</button></a>';
-} else {
-    
-    echo '<a href="connexion.php"><button class="Connexion">Connexion</button></a>';
-}
-?>
-
+    <a href="connexion.php"><button class="Connexion">Connexion</button></a>
 </nav>

@@ -10,7 +10,7 @@
 <body>
     <?php include "Header.PHP"; ?>
 
-    <?php include "nav.HTML"; ?>
+    <?php include "navConnexion.HTML"; ?>
 
     <h1>Compte Administration</h1>
 
