@@ -89,8 +89,11 @@ nav a:hover {
     @media screen and (max-width: 725px) {
         top: 20%;
     }
-    @media screen and (max-width: 725px) {
-        top: 15%;
+    @media screen and (max-width: 570px) {
+        top: 25%;
+    }
+    @media screen and (max-width: 380px) {
+        top: 13%;
     }
 
 
@@ -113,7 +116,9 @@ nav a:hover {
     @media screen and (max-width: 1100px) {
         top :27.5%;
      }
-     
+     @media screen and (max-width: 580px) {
+        top :33%;
+     }
      @media screen and (max-width: 370px) {
         top :17%;
      }
@@ -136,7 +141,7 @@ nav a:hover {
         top :35%;
      }
      @media screen and (max-width: 400px) {
-        top :30%;
+        top :20%;
          
      }
      
@@ -158,19 +163,19 @@ nav a:hover {
 
 
     @media screen and (max-width: 800px) {
-       top :36%;
+       top :38%;
         
     }
     @media screen and (max-width: 630px) {
-        top :37%;
-         
-     }
-    @media screen and (max-width: 580px) {
         top :38%;
          
      }
+    @media screen and (max-width: 580px) {
+        top :45%;
+         
+     }
      @media screen and (max-width: 400px) {
-        top :35%;
+        top :21.5%;
          
      }
     

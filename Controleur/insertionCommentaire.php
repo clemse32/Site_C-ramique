@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $connect = mysqli_connect("127.0.0.1", "root", "", "ceramique" );
+    $connect = mysqli_connect("mysql-ceramique.alwaysdata.net", "ceramique", "Clement32!", "ceramique_bdd" );
     
     if(isset($_POST['nom'],$_POST['prenom'],$_POST['email'],$_POST['message'])){
 

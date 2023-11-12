@@ -1,7 +1,7 @@
 <?php
 try {
     $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-    $bdd = new PDO('mysql:host=localhost;dbname=ceramique', 'root', '', $pdo_options);
+    $bdd = new PDO('mysql:host=mysql-ceramique.alwaysdata.net;dbname=ceramique_bdd', 'ceramique', 'Clement32!', $pdo_options);
 
     // Récupérer les données du formulaire
     $login = $_POST['login'];

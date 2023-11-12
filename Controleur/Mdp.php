@@ -1,7 +1,7 @@
 <?php
 try {
     $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;//évite injection sql
-    $bdd = new PDO('mysql:host=localhost;dbname=ceramique', 'root', '', $pdo_options);
+    $bdd = new PDO('mysql:host=mysql-ceramique.alwaysdata.net;dbname=ceramique_bdd', 'ceramique', 'Clement32!', $pdo_options);
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 

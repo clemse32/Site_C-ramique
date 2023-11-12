@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../Style/style.css" />
 
 
     <title>Annie B. Céramique</title>
 </head>
 <body>
     <?php 
-    include("Header.PHP");
+    include("Header.HTML");
     include("navConnexion.HTML");
     ?>
 
@@ -76,7 +76,7 @@
        
         if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
-            $connect = mysqli_connect("127.0.0.1", "root", "", "ceramique" );
+            $connect = mysqli_connect("mysql-ceramique.alwaysdata.net", "ceramique", "Clement32!", "ceramique_bdd" );
             
         
             $sql ="SELECT * FROM avis_message";
