@@ -64,9 +64,8 @@ nav a:hover {
 
 /* Style pour centrer le texte et le positionner */
 .image-contenaire {
-    position: relative; /* Position relative pour que le texte soit positionn par rapport ce conteneur */
-    text-align: center; /* Alignement du texte au centre */
-
+    position: relative; 
+    text-align: center; 
 }
 
 .texte-superpose {
@@ -92,19 +91,19 @@ nav a:hover {
 }
 
 .image-contenaire1 {
-    position: relative; /* Position relative pour que le texte soit position*/
-    text-align: center; /* Alignement du texte au centre */
+    position: relative; 
+    text-align: center; 
 
 }
 
 .texte-superpose1 {
-    position: absolute; /* Position absolue pour superposer le texte sur l'image */
-    top: 30%; /* Positionne le texte au milieu en hauteur */
-    left: 50%; /* Positionne le texte au milieu en largeur */
-    transform: translate(-50%, -50%); /* Centre le texte correctement */
-    color: white; /* Couleur du texte */
-    background: rgba(0, 0, 0, 0); /* Fond semi-transparent pour le texte */
-    padding: 50px; /* Rembourrage du texte */
+    position: absolute; 
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    background: rgba(0, 0, 0, 0); 
+    padding: 50px;
 
 }
 
@@ -208,12 +207,12 @@ aside {
 .carousel-container {
     display: flex;
     overflow: hidden;
-    width: 25%; /* la largeur du conteneur  */
+    width: 25%; 
     margin: 0 auto;
 }
 
 .carousel-slide {
-    flex: 0 0 100%; /* 100% de la largeur du conteneur */
+    flex: 0 0 100%; /
 }
 
 .carousel-slide img {
@@ -265,12 +264,14 @@ form {
 .texte1 {
     font-size: 1.8em;
     font-weight: bold;
-    color: #bc8831;
+    color: #f30909;
+    
 }
 
 .texte2 {
     font-size: 2.2em;
-    color: #927950;
+    color: #d51919;
+    
 }
 
 .texte3 {
@@ -297,13 +298,14 @@ form {
 }
 
 .texte5 {
-    font-size: 0.8em;
+
     font-weight: bold;
     color: #ffffff;
 
     @media screen and (min-width: 1256px) {
-        font-size: 1em;
+        font-size: 3em;
     }
+    
 }
 
 .texte-act {
