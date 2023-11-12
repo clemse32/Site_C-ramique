@@ -22,8 +22,6 @@ try {
     } else {
         // Authentification échouée
         echo "Nom d'utilisateur ou mot de passe incorrect.";
-        echo "utilisateur : " . $login;
-        // Ajoute un lien pour revenir à la page de connexion.
     }
 } catch (Exception $ex) {
     die("Erreur: " . $ex->getMessage());

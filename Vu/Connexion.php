@@ -34,7 +34,7 @@
 
     </section>
     
-    <footer class ="footerbloquer">
+    <footer class ="footer">
         <?php
         include "Footer.HTML";
         ?>

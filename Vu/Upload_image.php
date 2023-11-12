@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["image"])) {
         
         header("Location: Administrateur.php");
     } else {
-        echo " Erreur lors du téléchargement de l'image.";
+        echo " Erreur téléchargement image.";
     }
 }
 ?>

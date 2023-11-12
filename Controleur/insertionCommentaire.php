@@ -16,9 +16,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql ="INSERT INTO avis_message (Prenom, Nom, Mail, Message) value('$prenom', '$nom', '$email', '$message')";
 
     if (mysqli_query($connect, $sql)) {
-        echo 'réussi';
+        echo 'Message bien envoyé !';
     } else {
-        echo "problème fomulaire";
+        echo "Veuillez m'envoyer un mail via mon addresse mail ci-dessous";
     }
 
 mysqli_close($connect);

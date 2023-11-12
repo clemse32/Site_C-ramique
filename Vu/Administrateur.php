@@ -72,10 +72,7 @@
     <section>
         <h2>Récupération des avis</h2>
         <?php
-        if (isset($_SESSION["loggedin"])) {
-        } else {
-            echo "Pas de session en cours";
-        }
+       
         if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
             $connect = mysqli_connect("127.0.0.1", "root", "", "ceramique" );
