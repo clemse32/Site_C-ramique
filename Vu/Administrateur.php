@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../Style/styleAdministrateur.css" />
 
-
+    <link rel="icon" href="../Image/logo_julie.jpg" type="image/jpg">
     <title>Annie B. Céramique</title>
 </head>
 <body>
@@ -50,7 +50,7 @@
                 var imageSrc = button.getAttribute("data-image");
 
                 var xhr = new XMLHttpRequest();
-                xhr.open("POST", "supprimer_image.php", true);
+                xhr.open("POST", "../Controleur/supprimer_image.php", true);
                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
                 xhr.onload = function() {
@@ -123,7 +123,7 @@
                     var messageID = button.getAttribute("data-message-id");
 
                     var xhr = new XMLHttpRequest();
-                    xhr.open("POST", "supprimer_message.php", true);
+                    xhr.open("POST", "../Controleur/supprimer_message.php", true);
                     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
                     xhr.onload = function() {
@@ -142,8 +142,5 @@
         });
     </script>
 
-    <?php 
-    include("Footer.HTML"); 
-    ?>
 </body>
 </html>
